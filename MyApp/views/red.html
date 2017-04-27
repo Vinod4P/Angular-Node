@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>REDD</p>
+<!--<li ng-repeat="item in arrayUser" class="">-->
+<button ng-click="showAllUsers()">Show</button>
+<table>
+<tr ng-repeat="stud in userData">
+	<td>{{stud.user_id}}</td>
+	<td>{{stud.user_name}}</td>
+	<td>{{stud.user_password}}</td>
+</tr>
+</table>
+
+<div ng-repeat="item in userData">
+    Name: <input ng-model="item.user_name" /> <br/>
+    Pass: <input ng-model="item.user_password" /> <br/>
+	Id: <input ng-model="item.user_id" /> <br/>
+</div>
+</body>
+</html>
